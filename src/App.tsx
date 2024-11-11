@@ -12,8 +12,7 @@ function App() {
   const [error, setError] = useState<string | null>(null);
   const [geolocating, setGeolocating] = useState(true);
 
-  const API_KEY = import.meta.env.OPENWEATHER_API_KEY;
-
+  const API_KEY = "c4c07cd59785cf2952165dd5b45d2555";
   const fetchWeatherByCoords = async (lat: number, lon: number) => {
     try {
       setLoading(true);
